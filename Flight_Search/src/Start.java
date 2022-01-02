@@ -1,10 +1,13 @@
+import javax.swing.*;
+
+import view.SearchFlights;
 
 public class Start {
 
 	public static void main(String[] args) {
 		
-		System.out.println("Hello World");
-
+		SearchFlights sf = new SearchFlights();
+		sf.searchFlight();
+		
 	}
-
 }
