@@ -17,7 +17,4 @@ public class FlightDao {
 	Session session = sf.openSession();
 	Transaction tx = session.beginTransaction();
 	
-	
-	
-	
 }
