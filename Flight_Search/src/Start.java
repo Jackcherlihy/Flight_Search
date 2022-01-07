@@ -1,5 +1,3 @@
-import javax.swing.*;
-
 import view.SearchFlights;
 
 public class Start {
