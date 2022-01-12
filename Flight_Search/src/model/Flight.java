@@ -2,20 +2,28 @@ package model;
 
 public class Flight {
 	
+	//Add Singleton instance & make Constructors private.
+	static Flight instance = new Flight("F123", "13:50", "5/11/1997", 114, 220);
+	
 	String flightnum;
 	String time;
 	String date;
 	int passengers;
 	int capacity;
 	
-	public Flight() {}
+	private Flight() {}
 
-	public Flight(String flightnum, String time, String date, int passengers, int capacity) {
+	private Flight(String flightnum, String time, String date, int passengers, int capacity) {
 		this.flightnum = flightnum;
 		this.time = time;
 		this.date = date;
 		this.passengers = passengers;
 		this.capacity = capacity;
+	}
+	
+	//Return Singleton instance
+	public static Flight getFlightInstance() {
+		return instance;
 	}
 
 	public String getFlightnum() {

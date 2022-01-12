@@ -8,7 +8,8 @@ public class GetFlight {
 	
 	public String getInfo() {
 		
-		Flight testFlight = new Flight("F123", "13:50", "5/11/1997", 114, 220);
+		//Apply Singleton to Flight class
+		Flight testFlight = Flight.getFlightInstance();
 		
 		return testFlight.toString();
 	}
