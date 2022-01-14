@@ -21,7 +21,7 @@ public class Flight {
 		this.capacity = capacity;
 	}
 	
-	//Return Singleton instance
+	//Return Singleton instance.
 	public static Flight getFlightInstance() {
 		return instance;
 	}
